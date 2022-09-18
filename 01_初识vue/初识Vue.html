@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初识Vue</title>
+    <!--引入vue--> 
+    <script type="text/javascript" src="../js/vue.js "></script>
+</head>
+<body>
+<!--准备好一个容器-->
+<div id="root">
+    <h1>hello {{name}}</h1>
+</div>
+
+    <script type="text/javascript">
+       Vue.config.productionTip = false
+       Vue.config.devtools = true
+       //创建vue实例
+       new Vue({
+           el:'#root',//el用于指定当前vue实例为哪个容器服务，值通常为css选择器字符串
+           data:{
+               name:'world'
+           }
+       })
+
+    </script>
+    
+</body>
+</html>
